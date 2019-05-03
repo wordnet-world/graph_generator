@@ -418,7 +418,7 @@ MERGE (:Node { Text:"Harry Osborn"});
 MERGE (:Node { Text:"Spiderlings"});
 MERGE (:Node { Text:"Spider-Island Two"});
 MERGE (:Node { Text:"Looter"});
-MERGE (:Node { Text:"Spider-Man (Octavius/"Parker")"});
+
 MERGE (:Node { Text:"Benny"});
 MERGE (:Node { Text:"No. 23"});
 MERGE (:Node { Text:"Robo-Commander Seven"});
@@ -1344,16 +1344,16 @@ MATCH (a) (b) WHERE a.Text = "Spidey-Man" AND b.Text = "Peter Pooper" MERGE (a) 
 MATCH (a) (b) WHERE a.Text = "Spidey-Man" AND b.Text = "Spider-Man(Peter Parker)" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Spidey-Man" AND b.Text = "Wolverina's reality" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Spidey-Man" AND b.Text = "Spittle-Man" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Spider-Man(Duplicate)" AND b.Text = "Single" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Spider-Man(Duplicate)" AND b.Text = "Male" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Spider-Man(Duplicate)" AND b.Text = "Hazel" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Spider-Man(Duplicate)" AND b.Text = "Brown" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Spider-Man(Duplicate)" AND b.Text = "human" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Spider-Man(Duplicate)" AND b.Text = "mutate" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Spider-Man(Duplicate)" AND b.Text = "Manhattan" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Spider-Man(Duplicate)" AND b.Text = "Nick Spencer" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Spider-Man(Duplicate)" AND b.Text = "September, 2018" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Spider-Man(Duplicate)" AND b.Text = "November, 2018" MERGE (a) - [] - (b);
+
+
+
+
+
+
+
+
+
+
 MATCH (a) (b) WHERE a.Text = "Spidey-Baby" AND b.Text = "Blue" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Spidey-Baby" AND b.Text = "Red" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Spidey-Baby" AND b.Text = "Mutant" MERGE (a) - [] - (b);
@@ -1623,7 +1623,7 @@ MATCH (a) (b) WHERE a.Text = "Spider-Soldiers" AND b.Text = "Iron Patriot" MERGE
 MATCH (a) (b) WHERE a.Text = "Spider-Soldiers" AND b.Text = "Harry Osborn" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Spiderlings" AND b.Text = "Spider-Island Two" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Spiderlings" AND b.Text = "Looter" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Spiderlings" AND b.Text = "Spider-Man (Octavius/"Parker")" MERGE (a) - [] - (b);
+
 MATCH (a) (b) WHERE a.Text = "Spiderlings" AND b.Text = "Benny" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Spiderlings" AND b.Text = "No. 23" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Spiderlings" AND b.Text = "Robo-Commander Seven" MERGE (a) - [] - (b);
@@ -1648,7 +1648,7 @@ MATCH (a) (b) WHERE a.Text = "Unfriendly Neighborhood" AND b.Text = "Valkyrie (B
 MATCH (a) (b) WHERE a.Text = "Unfriendly Neighborhood" AND b.Text = "Future Foundation" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Unfriendly Neighborhood" AND b.Text = "Drax" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Unfriendly Neighborhood" AND b.Text = "Gamora" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Unfriendly Neighborhood" AND b.Text = "Groot" MERGE (a) - [] - (b);" MERGE (a) - [] - (b);" MERGE (a) - [] - (b);" MERGE (a) - [] - (b);" MERGE (a) - [] - (b);" MERGE (a) - [] - (b);" MERGE (a) - [] - (b);" MERGE (a) - [] - (b);" MERGE (a) - [] - (b);
+
 MATCH (a) (b) WHERE a.Text = "Billy Braddock" AND b.Text = "William Braddock" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Billy Braddock" AND b.Text = "Captain Britain" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Billy Braddock" AND b.Text = "American-British Spider-Man" MERGE (a) - [] - (b);
@@ -2272,5 +2272,4 @@ MATCH (a) (b) WHERE a.Text = "The Tallus" AND b.Text = "Exiles #1" MERGE (a) - [
 MATCH (a) (b) WHERE a.Text = "The Tallus" AND b.Text = "Exiles #66" MERGE (a) - [] - (b);" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Noxious Nine" AND b.Text = "Scorpion" MERGE (a) - [] - (b);
 MATCH (a) (b) WHERE a.Text = "Noxious Nine" AND b.Text = "Electro" MERGE (a) - [] - (b);" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Wolverine (Logan)" AND b.Text = "Rik Hoskin" MERGE (a) - [] - (b);
-MATCH (a) (b) WHERE a.Text = "Wolverine (Logan)" AND b.Text = "March, 2007" MERGE (a) - [] - (b);" MERGE (a) - [] - (b);
+
