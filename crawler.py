@@ -13,22 +13,25 @@ def recurse(depth, link, mapping, node):
     r=requests.get(link)
     soup = BeautifulSoup(r.text, 'html.parser')
     article = soup.find('div', attrs={"id":"mw-content-text"})
-    print('found {} associations'.format(len(article)))
+    i = 0
     for link in article.findAll('a', attrs={'href':re.compile("^/wiki/")}):
+        if i == 10:
+            break
         text = link.text
         if text == "":
             continue
-        if str.isdigit(text):
+        if str.isdigit(text[0]):
             continue
         if len(text.split(" ")) > 2:
             continue
         if mapping.does_vertex_exist(link.text):
             continue
-
+        print("creating association")
         mapping.add_vertex(link.text)
         if not mapping.does_edge_exist(node, link.text):
             mapping.add_edge(node, link.text)
-            recurse(depth+1,"https://en.wikipedia.org" + link.get('href'), mapping, link.text)
+            recurse(depth+1,"https://marvel.fandom.com/" + link.get('href'), mapping, link.text)
+            i += 1
         
 mapping = graph.Graph()
 mapping.add_vertex(root)
